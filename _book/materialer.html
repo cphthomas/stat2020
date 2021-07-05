@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Kapitel 24 Materialer | Statistik</title>
   <meta name="description" content="Kapitel 24 Materialer | Statistik" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Kapitel 24 Materialer | Statistik" />
   <meta property="og:type" content="book" />
@@ -33,8 +33,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="prev" href="podcasts.html"/>
 <link rel="next" href="ordliste.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-3.5.1/jquery.min.js"></script>
+<script src="libs/jquery-3.5.0/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -51,15 +50,10 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-<link href="libs/tippyjs-3.2.0/themes/google.css" rel="stylesheet" />
-<link href="libs/tippyjs-3.2.0/themes/light-border.css" rel="stylesheet" />
-<link href="libs/tippyjs-3.2.0/themes/light.css" rel="stylesheet" />
-<link href="libs/tippyjs-3.2.0/themes/translucent.css" rel="stylesheet" />
-<script src="libs/tippyjs-3.2.0/tippy.all.min.js"></script>
-<script src="libs/tippy-binding-0.1.0/tippy.js"></script>
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/tippyjs-2.5.2/tippy.all.min.js"></script>
+<script src="libs/tippy-binding-0.0.1/tippy.js"></script>
 <script src="libs/proj4js-2.3.15/proj4.js"></script>
 <link href="libs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
 <script src="libs/highcharts-8.1.2/highcharts.js"></script>
@@ -102,19 +96,16 @@
 <script src="libs/highcharts-8.1.2/modules/boost.js"></script>
 <script src="libs/highchart-binding-0.8.2/highchart.js"></script>
 <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.18/datatables.js"></script>
+<script src="libs/datatables-binding-0.14/datatables.js"></script>
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
 <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
 <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
 <link href="libs/dt-plugin-searchhighlight-1.10.20/source.css" rel="stylesheet" />
 <script src="libs/dt-plugin-searchhighlight-1.10.20/jquery.highlight.js"></script>
 <script src="libs/dt-plugin-searchhighlight-1.10.20/source.min.js"></script>
-<link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
-<link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
-<script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
 <script src="libs/jszip-1.10.20/jszip.min.js"></script>
 <script src="libs/pdfmake-1.10.20/pdfmake.js"></script>
 <script src="libs/pdfmake-1.10.20/vfs_fonts.js"></script>
@@ -127,18 +118,18 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -158,7 +149,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -191,7 +182,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -208,27 +198,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Login</a></li>
 <li class="divider"></li>
 <li><a href="index.html#section"></a></li>
-<li class="chapter" data-level="1" data-path="indledning.html"><a href="indledning.html"><i class="fa fa-check"></i><b>1</b> Indledning</a>
-<ul>
+<li class="chapter" data-level="1" data-path="indledning.html"><a href="indledning.html"><i class="fa fa-check"></i><b>1</b> Indledning</a><ul>
 <li class="chapter" data-level="1.1" data-path="indledning.html"><a href="indledning.html#freestat-basisversion"><i class="fa fa-check"></i><b>1.1</b> Freestat basisversion</a></li>
 <li class="chapter" data-level="1.2" data-path="indledning.html"><a href="indledning.html#freestat-fuld-version"><i class="fa fa-check"></i><b>1.2</b> Freestat fuld version</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html"><i class="fa fa-check"></i><b>2</b> Datasæt og data</a>
-<ul>
+<li class="chapter" data-level="2" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html"><i class="fa fa-check"></i><b>2</b> Datasæt og data</a><ul>
 <li class="chapter" data-level="2.0.1" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html#uni--bi--og-multivariate-datasæt"><i class="fa fa-check"></i><b>2.0.1</b> Uni- bi- og multivariate datasæt</a></li>
 <li class="chapter" data-level="2.0.2" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html#kvalitative-variable"><i class="fa fa-check"></i><b>2.0.2</b> Kvalitative variable</a></li>
 <li class="chapter" data-level="2.0.3" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html#kvantitative-variable"><i class="fa fa-check"></i><b>2.0.3</b> Kvantitative variable</a></li>
 <li class="chapter" data-level="2.0.4" data-path="datasæt-og-data.html"><a href="datasæt-og-data.html#skalatyper"><i class="fa fa-check"></i><b>2.0.4</b> Skalatyper</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html"><i class="fa fa-check"></i><b>3</b> Deskriptiv statistik</a>
-<ul>
+<li class="chapter" data-level="3" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html"><i class="fa fa-check"></i><b>3</b> Deskriptiv statistik</a><ul>
 <li class="chapter" data-level="3.0.1" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#tryg-aktien"><i class="fa fa-check"></i><b>3.0.1</b> Tryg aktien</a></li>
 <li class="chapter" data-level="3.0.2" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#middelværdien"><i class="fa fa-check"></i><b>3.0.2</b> Middelværdien</a></li>
 <li class="chapter" data-level="3.0.3" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#variansen"><i class="fa fa-check"></i><b>3.0.3</b> Variansen</a></li>
 <li class="chapter" data-level="3.0.4" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#standardafvigelsen"><i class="fa fa-check"></i><b>3.0.4</b> Standardafvigelsen</a></li>
 <li class="chapter" data-level="3.0.5" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#modus"><i class="fa fa-check"></i><b>3.0.5</b> Modus</a></li>
-<li class="chapter" data-level="3.1" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#medianen-kvartiler-og-fraktilen"><i class="fa fa-check"></i><b>3.1</b> Medianen, kvartiler og fraktilen</a>
-<ul>
+<li class="chapter" data-level="3.1" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#medianen-kvartiler-og-fraktilen"><i class="fa fa-check"></i><b>3.1</b> Medianen, kvartiler og fraktilen</a><ul>
 <li class="chapter" data-level="3.1.1" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#fraktiler"><i class="fa fa-check"></i><b>3.1.1</b> Fraktiler</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#skævhed"><i class="fa fa-check"></i><b>3.2</b> Skævhed</a></li>
@@ -236,10 +222,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#spørgsmål-deskriptiv-statistik"><i class="fa fa-check"></i><b>3.4</b> Spørgsmål deskriptiv statistik</a></li>
 <li class="chapter" data-level="3.5" data-path="deskriptiv-statistik.html"><a href="deskriptiv-statistik.html#selvtest"><i class="fa fa-check"></i><b>3.5</b> Selvtest</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="normalfordelingen.html"><a href="normalfordelingen.html"><i class="fa fa-check"></i><b>4</b> Normalfordelingen</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="normalfordelingen.html"><a href="normalfordelingen.html#normalfordelt-stokastisk-variabel"><i class="fa fa-check"></i><b>4.1</b> Normalfordelt Stokastisk variabel</a>
-<ul>
+<li class="chapter" data-level="4" data-path="normalfordelingen.html"><a href="normalfordelingen.html"><i class="fa fa-check"></i><b>4</b> Normalfordelingen</a><ul>
+<li class="chapter" data-level="4.1" data-path="normalfordelingen.html"><a href="normalfordelingen.html#normalfordelt-stokastisk-variabel"><i class="fa fa-check"></i><b>4.1</b> Normalfordelt Stokastisk variabel</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="normalfordelingen.html"><a href="normalfordelingen.html#standard-normalfordelingen"><i class="fa fa-check"></i><b>4.1.1</b> Standard normalfordelingen</a></li>
 <li class="chapter" data-level="4.1.2" data-path="normalfordelingen.html"><a href="normalfordelingen.html#normalfordelingen-1"><i class="fa fa-check"></i><b>4.1.2</b> 68% Normalfordelingen</a></li>
 <li class="chapter" data-level="4.1.3" data-path="normalfordelingen.html"><a href="normalfordelingen.html#normalfordelingen-2"><i class="fa fa-check"></i><b>4.1.3</b> 90% Normalfordelingen</a></li>
@@ -250,8 +234,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1.8" data-path="normalfordelingen.html"><a href="normalfordelingen.html#transformation-af-normalfordelinger"><i class="fa fa-check"></i><b>4.1.8</b> Transformation af normalfordelinger</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="normalfordelingen.html"><a href="normalfordelingen.html#normalfraktildiagram"><i class="fa fa-check"></i><b>4.2</b> Normalfraktildiagram</a></li>
-<li class="chapter" data-level="4.3" data-path="normalfordelingen.html"><a href="normalfordelingen.html#parametre-og-parameter-estimater"><i class="fa fa-check"></i><b>4.3</b> Parametre og parameter-estimater</a>
-<ul>
+<li class="chapter" data-level="4.3" data-path="normalfordelingen.html"><a href="normalfordelingen.html#parametre-og-parameter-estimater"><i class="fa fa-check"></i><b>4.3</b> Parametre og parameter-estimater</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="normalfordelingen.html"><a href="normalfordelingen.html#parameter-estimat-for-middelværdi"><i class="fa fa-check"></i><b>4.3.1</b> Parameter-estimat for middelværdi</a></li>
 <li class="chapter" data-level="4.3.2" data-path="normalfordelingen.html"><a href="normalfordelingen.html#parameter-estimat-for-standardafvigelsen"><i class="fa fa-check"></i><b>4.3.2</b> Parameter-estimat for standardafvigelsen</a></li>
 <li class="chapter" data-level="4.3.3" data-path="normalfordelingen.html"><a href="normalfordelingen.html#data--stikprøve--og-populationsfordelingen"><i class="fa fa-check"></i><b>4.3.3</b> Data- stikprøve- og populationsfordelingen</a></li>
@@ -260,8 +243,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.4" data-path="normalfordelingen.html"><a href="normalfordelingen.html#frihedsgrader"><i class="fa fa-check"></i><b>4.4</b> Frihedsgrader</a></li>
 <li class="chapter" data-level="4.5" data-path="normalfordelingen.html"><a href="normalfordelingen.html#t-fordelingen"><i class="fa fa-check"></i><b>4.5</b> t-fordelingen</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html"><i class="fa fa-check"></i><b>5</b> Konfidensintervaller</a>
-<ul>
+<li class="chapter" data-level="5" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html"><i class="fa fa-check"></i><b>5</b> Konfidensintervaller</a><ul>
 <li class="chapter" data-level="5.0.1" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html#konfidensinterval-for-middelværdien"><i class="fa fa-check"></i><b>5.0.1</b> Konfidensinterval for middelværdien</a></li>
 <li class="chapter" data-level="5.0.2" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html#eksempler-konfidensinterval-middelværdi"><i class="fa fa-check"></i><b>5.0.2</b> Eksempler konfidensinterval middelværdi</a></li>
 <li class="chapter" data-level="5.1" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html#quiz-konfidensintervaller"><i class="fa fa-check"></i><b>5.1</b> Quiz konfidensintervaller</a></li>
@@ -269,12 +251,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.3" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html#konfidensinterval-for-standardafvigelsen"><i class="fa fa-check"></i><b>5.3</b> Konfidensinterval for standardafvigelsen</a></li>
 <li class="chapter" data-level="5.4" data-path="konfidensintervaller.html"><a href="konfidensintervaller.html#spørgsmål-konfidensinterval-for-standardafvigelsen"><i class="fa fa-check"></i><b>5.4</b> Spørgsmål konfidensinterval for standardafvigelsen</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html"><i class="fa fa-check"></i><b>6</b> Hypotesetests middelværdi</a>
-<ul>
+<li class="chapter" data-level="6" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html"><i class="fa fa-check"></i><b>6</b> Hypotesetests middelværdi</a><ul>
 <li class="chapter" data-level="6.1" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#hypotesetest-tosidet-alternativ-hypotese"><i class="fa fa-check"></i><b>6.1</b> Hypotesetest tosidet alternativ hypotese</a></li>
 <li class="chapter" data-level="6.2" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#tosidet-alternativ-hypotese-og-konfidensintervallet."><i class="fa fa-check"></i><b>6.2</b> Tosidet alternativ hypotese og konfidensintervallet.</a></li>
-<li class="chapter" data-level="6.3" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#ensidet-alternativ-hypotese"><i class="fa fa-check"></i><b>6.3</b> Ensidet alternativ hypotese</a>
-<ul>
+<li class="chapter" data-level="6.3" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#ensidet-alternativ-hypotese"><i class="fa fa-check"></i><b>6.3</b> Ensidet alternativ hypotese</a><ul>
 <li class="chapter" data-level="6.3.1" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#ensidet-alternativ-hypotese-opad"><i class="fa fa-check"></i><b>6.3.1</b> Ensidet alternativ hypotese opad</a></li>
 <li class="chapter" data-level="6.3.2" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#ensidet-alternativ-hypotese-nedad"><i class="fa fa-check"></i><b>6.3.2</b> Ensidet alternativ hypotese nedad</a></li>
 <li class="chapter" data-level="6.3.3" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#eksempel"><i class="fa fa-check"></i><b>6.3.3</b> Eksempel</a></li>
@@ -288,21 +268,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.10" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#selvtest-2"><i class="fa fa-check"></i><b>6.10</b> Selvtest</a></li>
 <li class="chapter" data-level="6.11" data-path="hypotesetests-middelværdi.html"><a href="hypotesetests-middelværdi.html#selvtest-3"><i class="fa fa-check"></i><b>6.11</b> Selvtest</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="andel.html"><a href="andel.html"><i class="fa fa-check"></i><b>7</b> 1 Andel</a>
-<ul>
+<li class="chapter" data-level="7" data-path="andel.html"><a href="andel.html"><i class="fa fa-check"></i><b>7</b> 1 Andel</a><ul>
 <li class="chapter" data-level="7.1" data-path="andel.html"><a href="andel.html#parameterestimat-for-andele"><i class="fa fa-check"></i><b>7.1</b> Parameterestimat for andele</a></li>
-<li class="chapter" data-level="7.2" data-path="andel.html"><a href="andel.html#konfidensinterval-for-en-andel"><i class="fa fa-check"></i><b>7.2</b> Konfidensinterval for en andel</a>
-<ul>
+<li class="chapter" data-level="7.2" data-path="andel.html"><a href="andel.html#konfidensinterval-for-en-andel"><i class="fa fa-check"></i><b>7.2</b> Konfidensinterval for en andel</a><ul>
 <li class="chapter" data-level="7.2.1" data-path="andel.html"><a href="andel.html#fejlmargin-ved-andele"><i class="fa fa-check"></i><b>7.2.1</b> Fejlmargin ved andele</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="andel.html"><a href="andel.html#eksempler-konfidensinterval-for-andele"><i class="fa fa-check"></i><b>7.3</b> Eksempler, konfidensinterval for andele</a>
-<ul>
+<li class="chapter" data-level="7.3" data-path="andel.html"><a href="andel.html#eksempler-konfidensinterval-for-andele"><i class="fa fa-check"></i><b>7.3</b> Eksempler, konfidensinterval for andele</a><ul>
 <li class="chapter" data-level="7.3.1" data-path="andel.html"><a href="andel.html#tryg-aktien-2"><i class="fa fa-check"></i><b>7.3.1</b> Tryg aktien</a></li>
 </ul></li>
 <li class="chapter" data-level="7.4" data-path="andel.html"><a href="andel.html#spørgsmål-konfidensinterval-andele"><i class="fa fa-check"></i><b>7.4</b> Spørgsmål konfidensinterval andele</a></li>
 <li class="chapter" data-level="7.5" data-path="andel.html"><a href="andel.html#hypotesetest-1-andel"><i class="fa fa-check"></i><b>7.5</b> Hypotesetest 1 andel</a></li>
-<li class="chapter" data-level="7.6" data-path="andel.html"><a href="andel.html#hypotesetest-en-andel-tosidet-alternativ-hypotese"><i class="fa fa-check"></i><b>7.6</b> Hypotesetest en andel, tosidet alternativ hypotese</a>
-<ul>
+<li class="chapter" data-level="7.6" data-path="andel.html"><a href="andel.html#hypotesetest-en-andel-tosidet-alternativ-hypotese"><i class="fa fa-check"></i><b>7.6</b> Hypotesetest en andel, tosidet alternativ hypotese</a><ul>
 <li class="chapter" data-level="7.6.1" data-path="andel.html"><a href="andel.html#z-teststørrelsen"><i class="fa fa-check"></i><b>7.6.1</b> z-teststørrelsen</a></li>
 </ul></li>
 <li class="chapter" data-level="7.7" data-path="andel.html"><a href="andel.html#hypotesetest-en-andel-ensidet-alternativ-hypotese-nedad"><i class="fa fa-check"></i><b>7.7</b> Hypotesetest en andel, ensidet alternativ hypotese nedad</a></li>
@@ -311,25 +287,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.10" data-path="andel.html"><a href="andel.html#selvtest-4"><i class="fa fa-check"></i><b>7.10</b> Selvtest</a></li>
 <li class="chapter" data-level="7.11" data-path="andel.html"><a href="andel.html#selvtest-5"><i class="fa fa-check"></i><b>7.11</b> Selvtest</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="andele.html"><a href="andele.html"><i class="fa fa-check"></i><b>8</b> 2 andele</a>
-<ul>
+<li class="chapter" data-level="8" data-path="andele.html"><a href="andele.html"><i class="fa fa-check"></i><b>8</b> 2 andele</a><ul>
 <li class="chapter" data-level="8.1" data-path="andele.html"><a href="andele.html#konfidensinterval-for-2-andele"><i class="fa fa-check"></i><b>8.1</b> Konfidensinterval for 2 andele</a></li>
 <li class="chapter" data-level="8.2" data-path="andele.html"><a href="andele.html#spørgsmål-2-andele-konfidensintervaller"><i class="fa fa-check"></i><b>8.2</b> Spørgsmål 2 andele konfidensintervaller</a></li>
-<li class="chapter" data-level="8.3" data-path="andele.html"><a href="andele.html#hypotesetests-2-andele"><i class="fa fa-check"></i><b>8.3</b> Hypotesetests 2 andele</a>
-<ul>
+<li class="chapter" data-level="8.3" data-path="andele.html"><a href="andele.html#hypotesetests-2-andele"><i class="fa fa-check"></i><b>8.3</b> Hypotesetests 2 andele</a><ul>
 <li class="chapter" data-level="8.3.1" data-path="andele.html"><a href="andele.html#eksempler"><i class="fa fa-check"></i><b>8.3.1</b> Eksempler</a></li>
 </ul></li>
 <li class="chapter" data-level="8.4" data-path="andele.html"><a href="andele.html#spørgsmål-2-andele"><i class="fa fa-check"></i><b>8.4</b> Spørgsmål 2 andele</a></li>
 <li class="chapter" data-level="8.5" data-path="andele.html"><a href="andele.html#selvtest-6"><i class="fa fa-check"></i><b>8.5</b> Selvtest</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="middelværdier.html"><a href="middelværdier.html"><i class="fa fa-check"></i><b>9</b> 2 Middelværdier</a>
-<ul>
-<li class="chapter" data-level="9.1" data-path="middelværdier.html"><a href="middelværdier.html#konfidensinterval-for-2-middelværdier"><i class="fa fa-check"></i><b>9.1</b> Konfidensinterval for 2 middelværdier</a>
-<ul>
+<li class="chapter" data-level="9" data-path="middelværdier.html"><a href="middelværdier.html"><i class="fa fa-check"></i><b>9</b> 2 Middelværdier</a><ul>
+<li class="chapter" data-level="9.1" data-path="middelværdier.html"><a href="middelværdier.html#konfidensinterval-for-2-middelværdier"><i class="fa fa-check"></i><b>9.1</b> Konfidensinterval for 2 middelværdier</a><ul>
 <li class="chapter" data-level="9.1.1" data-path="middelværdier.html"><a href="middelværdier.html#pooled-og-unpooled-t-test"><i class="fa fa-check"></i><b>9.1.1</b> Pooled og unpooled t-test</a></li>
 </ul></li>
-<li class="chapter" data-level="9.2" data-path="middelværdier.html"><a href="middelværdier.html#varianshomogenitet"><i class="fa fa-check"></i><b>9.2</b> Varianshomogenitet</a>
-<ul>
+<li class="chapter" data-level="9.2" data-path="middelværdier.html"><a href="middelværdier.html#varianshomogenitet"><i class="fa fa-check"></i><b>9.2</b> Varianshomogenitet</a><ul>
 <li class="chapter" data-level="9.2.1" data-path="middelværdier.html"><a href="middelværdier.html#forudsætninger"><i class="fa fa-check"></i><b>9.2.1</b> Forudsætninger</a></li>
 </ul></li>
 <li class="chapter" data-level="9.3" data-path="middelværdier.html"><a href="middelværdier.html#sammenligning-af-2-middelværdier-ens-varians-pooled-t-test"><i class="fa fa-check"></i><b>9.3</b> Sammenligning af 2 middelværdier ens varians Pooled t-test</a></li>
@@ -338,28 +309,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="9.6" data-path="middelværdier.html"><a href="middelværdier.html#spørgsmål-2-middelværdier"><i class="fa fa-check"></i><b>9.6</b> Spørgsmål 2 middelværdier</a></li>
 <li class="chapter" data-level="9.7" data-path="middelværdier.html"><a href="middelværdier.html#selvtest-7"><i class="fa fa-check"></i><b>9.7</b> Selvtest</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="korrelation.html"><a href="korrelation.html"><i class="fa fa-check"></i><b>10</b> Korrelation</a>
-<ul>
+<li class="chapter" data-level="10" data-path="korrelation.html"><a href="korrelation.html"><i class="fa fa-check"></i><b>10</b> Korrelation</a><ul>
 <li class="chapter" data-level="10.0.1" data-path="korrelation.html"><a href="korrelation.html#spuriøse-korrelationer"><i class="fa fa-check"></i><b>10.0.1</b> Spuriøse korrelationer</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html"><i class="fa fa-check"></i><b>11</b> Lineær regressionsanalyse</a>
-<ul>
+<li class="chapter" data-level="11" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html"><i class="fa fa-check"></i><b>11</b> Lineær regressionsanalyse</a><ul>
 <li class="chapter" data-level="11.1" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#joe-and-the-juice"><i class="fa fa-check"></i><b>11.1</b> Joe and The Juice</a></li>
 <li class="chapter" data-level="11.2" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#freestat-output-lineær-regression-joe-and-the-juice"><i class="fa fa-check"></i><b>11.2</b> Freestat output lineær regression Joe and The Juice</a></li>
-<li class="chapter" data-level="11.3" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#forudsætninger-lineær-regression."><i class="fa fa-check"></i><b>11.3</b> Forudsætninger lineær regression.</a>
-<ul>
+<li class="chapter" data-level="11.3" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#forudsætninger-lineær-regression."><i class="fa fa-check"></i><b>11.3</b> Forudsætninger lineær regression.</a><ul>
 <li class="chapter" data-level="11.3.1" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#linearitet"><i class="fa fa-check"></i><b>11.3.1</b> Linearitet</a></li>
 <li class="chapter" data-level="11.3.2" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#varianshomogenitet-1"><i class="fa fa-check"></i><b>11.3.2</b> Varianshomogenitet</a></li>
 <li class="chapter" data-level="11.3.3" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#uafhængighed-residualer"><i class="fa fa-check"></i><b>11.3.3</b> Uafhængighed residualer</a></li>
 <li class="chapter" data-level="11.3.4" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#normalitet-residualer"><i class="fa fa-check"></i><b>11.3.4</b> Normalitet residualer</a></li>
 </ul></li>
-<li class="chapter" data-level="11.4" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#simpel-lineær-regression-rømø"><i class="fa fa-check"></i><b>11.4</b> Simpel lineær regression Rømø</a>
-<ul>
+<li class="chapter" data-level="11.4" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#simpel-lineær-regression-rømø"><i class="fa fa-check"></i><b>11.4</b> Simpel lineær regression Rømø</a><ul>
 <li class="chapter" data-level="11.4.1" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#video-simpel-lineær-regression-pi-og-ki"><i class="fa fa-check"></i><b>11.4.1</b> Video simpel lineær regression PI og KI</a></li>
 <li class="chapter" data-level="11.4.2" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#video-simpel-lineær-regression-pi-og-ki-1"><i class="fa fa-check"></i><b>11.4.2</b> Video simpel lineær regression PI og KI</a></li>
 </ul></li>
-<li class="chapter" data-level="11.5" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#multipel-lineær-regression"><i class="fa fa-check"></i><b>11.5</b> Multipel lineær regression</a>
-<ul>
+<li class="chapter" data-level="11.5" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#multipel-lineær-regression"><i class="fa fa-check"></i><b>11.5</b> Multipel lineær regression</a><ul>
 <li class="chapter" data-level="11.5.1" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#dummy-variable"><i class="fa fa-check"></i><b>11.5.1</b> Dummy variable</a></li>
 <li class="chapter" data-level="11.5.2" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#forudsætning-multikollinearitet"><i class="fa fa-check"></i><b>11.5.2</b> Forudsætning multikollinearitet</a></li>
 <li class="chapter" data-level="11.5.3" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#multipel-lineær-regression-forudsagt-værdi"><i class="fa fa-check"></i><b>11.5.3</b> Multipel lineær regression forudsagt værdi</a></li>
@@ -370,48 +336,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.9" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#selvtest-10"><i class="fa fa-check"></i><b>11.9</b> Selvtest</a></li>
 <li class="chapter" data-level="11.10" data-path="lineær-regressionsanalyse.html"><a href="lineær-regressionsanalyse.html#quiz"><i class="fa fa-check"></i><b>11.10</b> Quiz</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="binomialfordelingen-premium.html"><a href="binomialfordelingen-premium.html"><i class="fa fa-check"></i><b>12</b> <font color="red">Binomialfordelingen<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="12" data-path="binomialfordelingen-premium.html"><a href="binomialfordelingen-premium.html"><i class="fa fa-check"></i><b>12</b> <font color="red">Binomialfordelingen<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="12.1" data-path="binomialfordelingen-premium.html"><a href="binomialfordelingen-premium.html#selvtest-premium"><i class="fa fa-check"></i><b>12.1</b> <font color="red">Selvtest<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="den-hypergeometriske-fordeling-premium.html"><a href="den-hypergeometriske-fordeling-premium.html"><i class="fa fa-check"></i><b>13</b> <font color="red">Den hypergeometriske fordeling<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="13" data-path="den-hypergeometriske-fordeling-premium.html"><a href="den-hypergeometriske-fordeling-premium.html"><i class="fa fa-check"></i><b>13</b> <font color="red">Den hypergeometriske fordeling<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="13.1" data-path="den-hypergeometriske-fordeling-premium.html"><a href="den-hypergeometriske-fordeling-premium.html#selvtest-premium-1"><i class="fa fa-check"></i><b>13.1</b> <font color="red">Selvtest<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="poisson-fordelingen-premium.html"><a href="poisson-fordelingen-premium.html"><i class="fa fa-check"></i><b>14</b> <font color="red">Poisson fordelingen<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="14" data-path="poisson-fordelingen-premium.html"><a href="poisson-fordelingen-premium.html"><i class="fa fa-check"></i><b>14</b> <font color="red">Poisson fordelingen<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="14.1" data-path="poisson-fordelingen-premium.html"><a href="poisson-fordelingen-premium.html#selvtest-premium-2"><i class="fa fa-check"></i><b>14.1</b> <font color="red">Selvtest<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html"><i class="fa fa-check"></i><b>15</b> <font color="red">Stikprøveteori<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="15" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html"><i class="fa fa-check"></i><b>15</b> <font color="red">Stikprøveteori<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="15.1" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#bekvemmelighedsudvælgelse-premium"><i class="fa fa-check"></i><b>15.1</b> <font color="red">Bekvemmelighedsudvælgelse<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="15.2" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#snowballing-premium"><i class="fa fa-check"></i><b>15.2</b> <font color="red">Snowballing<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="15.3" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#simpel-tilfældig-udvælgelse-premium"><i class="fa fa-check"></i><b>15.3</b> <font color="red">Simpel tilfældig udvælgelse<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="15.4" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#systematisk-udvælgelse-premium"><i class="fa fa-check"></i><b>15.4</b> <font color="red">Systematisk udvælgelse<sup> Premium </font></sup></a></li>
-<li class="chapter" data-level="15.5" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#stratificeret-udvælgelse-premium"><i class="fa fa-check"></i><b>15.5</b> <font color="red">Stratificeret udvælgelse<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="15.5" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#stratificeret-udvælgelse-premium"><i class="fa fa-check"></i><b>15.5</b> <font color="red">Stratificeret udvælgelse<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="15.5.1" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#proportional-allokering-premium"><i class="fa fa-check"></i><b>15.5.1</b> <font color="red">Proportional allokering<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="15.5.2" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#optimal-allokering-premium"><i class="fa fa-check"></i><b>15.5.2</b> <font color="red">Optimal allokering<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="15.5.3" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#poststratifikation-premium"><i class="fa fa-check"></i><b>15.5.3</b> <font color="red">Poststratifikation<sup> Premium </font></sup></a></li>
 </ul></li>
 <li class="chapter" data-level="15.6" data-path="stikprøveteori-premium.html"><a href="stikprøveteori-premium.html#klyngeudvælgelse-eller-cluster-udvælgelse-premium"><i class="fa fa-check"></i><b>15.6</b> <font color="red">Klyngeudvælgelse eller cluster udvælgelse<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="sandsynligheder.html"><a href="sandsynligheder.html"><i class="fa fa-check"></i><b>16</b> Sandsynligheder</a>
-<ul>
+<li class="chapter" data-level="16" data-path="sandsynligheder.html"><a href="sandsynligheder.html"><i class="fa fa-check"></i><b>16</b> Sandsynligheder</a><ul>
 <li class="chapter" data-level="16.0.1" data-path="sandsynligheder.html"><a href="sandsynligheder.html#forenings--og-fælleshændelser"><i class="fa fa-check"></i><b>16.0.1</b> Forenings- og fælleshændelser</a></li>
-<li class="chapter" data-level="16.1" data-path="sandsynligheder.html"><a href="sandsynligheder.html#betingede-sandsynligheder"><i class="fa fa-check"></i><b>16.1</b> Betingede sandsynligheder</a>
-<ul>
+<li class="chapter" data-level="16.1" data-path="sandsynligheder.html"><a href="sandsynligheder.html#betingede-sandsynligheder"><i class="fa fa-check"></i><b>16.1</b> Betingede sandsynligheder</a><ul>
 <li class="chapter" data-level="16.1.1" data-path="sandsynligheder.html"><a href="sandsynligheder.html#race-og-dødsdom-eksempel"><i class="fa fa-check"></i><b>16.1.1</b> Race og dødsdom eksempel</a></li>
 </ul></li>
 <li class="chapter" data-level="16.2" data-path="sandsynligheder.html"><a href="sandsynligheder.html#uafhængighed"><i class="fa fa-check"></i><b>16.2</b> Uafhængighed</a></li>
 </ul></li>
-<li class="chapter" data-level="17" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html"><i class="fa fa-check"></i><b>17</b> Chi i anden tests</a>
-<ul>
+<li class="chapter" data-level="17" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html"><i class="fa fa-check"></i><b>17</b> Chi i anden tests</a><ul>
 <li class="chapter" data-level="17.1" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#goodness-of-fit-test"><i class="fa fa-check"></i><b>17.1</b> Goodness of fit test</a></li>
 <li class="chapter" data-level="17.2" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#forudsætning"><i class="fa fa-check"></i><b>17.2</b> Forudsætning</a></li>
 <li class="chapter" data-level="17.3" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#chi-i-anden-test"><i class="fa fa-check"></i><b>17.3</b> Chi i anden test</a></li>
-<li class="chapter" data-level="17.4" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#chi-i-anden-test-2"><i class="fa fa-check"></i><b>17.4</b> Chi i anden test 2</a>
-<ul>
+<li class="chapter" data-level="17.4" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#chi-i-anden-test-2"><i class="fa fa-check"></i><b>17.4</b> Chi i anden test 2</a><ul>
 <li class="chapter" data-level="17.4.1" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#uafhængighed-1"><i class="fa fa-check"></i><b>17.4.1</b> Uafhængighed</a></li>
 <li class="chapter" data-level="17.4.2" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#anmeldte-skader-fordelt-på-regioner-og-antal-skader"><i class="fa fa-check"></i><b>17.4.2</b> Anmeldte skader fordelt på regioner og antal skader</a></li>
 </ul></li>
@@ -419,35 +376,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="17.6" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#selvtest-12"><i class="fa fa-check"></i><b>17.6</b> Selvtest</a></li>
 <li class="chapter" data-level="17.7" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#quiz-chi-i-anden-tests"><i class="fa fa-check"></i><b>17.7</b> Quiz Chi i anden tests</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="anova-premium.html"><a href="anova-premium.html"><i class="fa fa-check"></i><b>18</b> <font color="red">ANOVA<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="18" data-path="anova-premium.html"><a href="anova-premium.html"><i class="fa fa-check"></i><b>18</b> <font color="red">ANOVA<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="18.1" data-path="anova-premium.html"><a href="anova-premium.html#selvtest-premium-3"><i class="fa fa-check"></i><b>18.1</b> <font color="red">Selvtest<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="18.2" data-path="anova-premium.html"><a href="anova-premium.html#selvtest-premium-4"><i class="fa fa-check"></i><b>18.2</b> <font color="red">Selvtest<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="18.3" data-path="anova-premium.html"><a href="anova-premium.html#quiz-anova-premium"><i class="fa fa-check"></i><b>18.3</b> <font color="red">Quiz ANOVA<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="19" data-path="cran-r-premium.html"><a href="cran-r-premium.html"><i class="fa fa-check"></i><b>19</b> <font color="red">Cran R<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="19" data-path="cran-r-premium.html"><a href="cran-r-premium.html"><i class="fa fa-check"></i><b>19</b> <font color="red">Cran R<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="19.1" data-path="cran-r-premium.html"><a href="cran-r-premium.html#r-video-tutorials-premium"><i class="fa fa-check"></i><b>19.1</b> <font color="red">R video-tutorials<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="20" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html"><i class="fa fa-check"></i><b>20</b> <font color="red">Faktoranalyse<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="20" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html"><i class="fa fa-check"></i><b>20</b> <font color="red">Faktoranalyse<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="20.1" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#hvilke-faktorer-er-vigtige-når-man-køber-en-ny-computer-premium"><i class="fa fa-check"></i><b>20.1</b> <font color="red">Hvilke faktorer er vigtige når man køber en ny computer:<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="20.2" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#forudsætninger-for-faktoranalysen-premium"><i class="fa fa-check"></i><b>20.2</b> <font color="red">Forudsætninger for faktoranalysen<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="20.3" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#selve-faktoranalysen-premium"><i class="fa fa-check"></i><b>20.3</b> <font color="red">Selve Faktoranalysen<sup> Premium </font></sup></a></li>
-<li class="chapter" data-level="20.4" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#hvor-mange-faktorer-bør-benyttes-premium"><i class="fa fa-check"></i><b>20.4</b> <font color="red">Hvor mange faktorer bør benyttes?<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="20.4" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#hvor-mange-faktorer-bør-benyttes-premium"><i class="fa fa-check"></i><b>20.4</b> <font color="red">Hvor mange faktorer bør benyttes?<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="20.4.1" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#eigenvalues-metoden-premium"><i class="fa fa-check"></i><b>20.4.1</b> <font color="red">Eigenvalues metoden<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="20.4.2" data-path="faktoranalyse-premium.html"><a href="faktoranalyse-premium.html#eigenvalues-metoden-premium-1"><i class="fa fa-check"></i><b>20.4.2</b> <font color="red">Eigenvalues metoden<sup> Premium </font></sup></a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="21" data-path="klyngeanalyse-premium.html"><a href="klyngeanalyse-premium.html"><i class="fa fa-check"></i><b>21</b> <font color="red">Klyngeanalyse<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="21" data-path="klyngeanalyse-premium.html"><a href="klyngeanalyse-premium.html"><i class="fa fa-check"></i><b>21</b> <font color="red">Klyngeanalyse<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="21.1" data-path="klyngeanalyse-premium.html"><a href="klyngeanalyse-premium.html#hierakisk-klyngeanalyse-hclust-kommandoen-premium"><i class="fa fa-check"></i><b>21.1</b> <font color="red">Hierakisk klyngeanalyse hclust kommandoen<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="21.2" data-path="klyngeanalyse-premium.html"><a href="klyngeanalyse-premium.html#ikke-hierakisk-klyngeanalyse-kmeans-kommandoen-premium"><i class="fa fa-check"></i><b>21.2</b> <font color="red">Ikke hierakisk klyngeanalyse kmeans kommandoen<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="21.3" data-path="klyngeanalyse-premium.html"><a href="klyngeanalyse-premium.html#validering-med-anova-premium"><i class="fa fa-check"></i><b>21.3</b> <font color="red">Validering med ANOVA<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="22" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html"><i class="fa fa-check"></i><b>22</b> <font color="red">Tidsrækker og ARIMA<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="22" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html"><i class="fa fa-check"></i><b>22</b> <font color="red">Tidsrækker og ARIMA<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="22.1" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima000-premium"><i class="fa fa-check"></i><b>22.1</b> <font color="red">ARIMA(0,0,0)<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="22.2" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima100-eller-ar1-autoregression-premium"><i class="fa fa-check"></i><b>22.2</b> <font color="red">ARIMA(1,0,0) eller AR(1) autoregression<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="22.3" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima010-eller-i1-integrated-premium"><i class="fa fa-check"></i><b>22.3</b> <font color="red">ARIMA(0,1,0) eller I(1) Integrated<sup> Premium </font></sup></a></li>
@@ -455,24 +406,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="22.5" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#plots-med-forskellige-modeller-premium"><i class="fa fa-check"></i><b>22.5</b> <font color="red">Plots med forskellige modeller<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="22.6" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima-af-højere-orden-premium"><i class="fa fa-check"></i><b>22.6</b> <font color="red">ARIMA af højere orden<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="22.7" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima-og-sæsonalitet-premium"><i class="fa fa-check"></i><b>22.7</b> <font color="red">ARIMA og sæsonalitet<sup> Premium </font></sup></a></li>
-<li class="chapter" data-level="22.8" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima-eksempler-premium"><i class="fa fa-check"></i><b>22.8</b> <font color="red">ARIMA eksempler<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="22.8" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#arima-eksempler-premium"><i class="fa fa-check"></i><b>22.8</b> <font color="red">ARIMA eksempler<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="22.8.1" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#traktorer-premium"><i class="fa fa-check"></i><b>22.8.1</b> <font color="red">Traktorer<sup> Premium </font></sup></a></li>
 <li class="chapter" data-level="22.8.2" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#detail-debet-card-forbrug-på-island-millioner-isk.-premium"><i class="fa fa-check"></i><b>22.8.2</b> <font color="red">Detail debet card forbrug på Island (millioner ISK).<sup> Premium </font></sup></a></li>
 </ul></li>
-<li class="chapter" data-level="22.9" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#forecast-aktiekurser-premium"><i class="fa fa-check"></i><b>22.9</b> <font color="red">Forecast Aktiekurser<sup> Premium </font></sup></a>
-<ul>
+<li class="chapter" data-level="22.9" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#forecast-aktiekurser-premium"><i class="fa fa-check"></i><b>22.9</b> <font color="red">Forecast Aktiekurser<sup> Premium </font></sup></a><ul>
 <li class="chapter" data-level="22.9.1" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#eksporter-aktiekurser-til-excel-premium"><i class="fa fa-check"></i><b>22.9.1</b> <font color="red">Eksporter Aktiekurser til Excel<sup> Premium </font></sup></a></li>
 </ul></li>
 <li class="chapter" data-level="22.10" data-path="tidsrækker-og-arima-premium.html"><a href="tidsrækker-og-arima-premium.html#aktieafkast-premium"><i class="fa fa-check"></i><b>22.10</b> <font color="red">Aktieafkast<sup> Premium </font></sup></a></li>
 </ul></li>
 <li class="chapter" data-level="23" data-path="podcasts.html"><a href="podcasts.html"><i class="fa fa-check"></i><b>23</b> Podcasts</a></li>
-<li class="chapter" data-level="24" data-path="materialer.html"><a href="materialer.html"><i class="fa fa-check"></i><b>24</b> Materialer</a>
-<ul>
-<li class="chapter" data-level="24.1" data-path="materialer.html"><a href="materialer.html#videoer-teori"><i class="fa fa-check"></i><b>24.1</b> Videoer teori</a>
-<ul>
-<li class="chapter" data-level="24.1.1" data-path="materialer.html"><a href="materialer.html#chi-i-anden-test-1"><i class="fa fa-check"></i><b>24.1.1</b> Chi i anden test</a></li>
-<li class="chapter" data-level="24.1.2" data-path="materialer.html"><a href="materialer.html#chi-i-anden-test-2-1"><i class="fa fa-check"></i><b>24.1.2</b> Chi i anden test 2</a></li>
+<li class="chapter" data-level="24" data-path="materialer.html"><a href="materialer.html"><i class="fa fa-check"></i><b>24</b> Materialer</a><ul>
+<li class="chapter" data-level="24.1" data-path="materialer.html"><a href="materialer.html#videoer-teori"><i class="fa fa-check"></i><b>24.1</b> Videoer teori</a><ul>
+<li class="chapter" data-level="24.1.1" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#chi-i-anden-test"><i class="fa fa-check"></i><b>24.1.1</b> Chi i anden test</a></li>
+<li class="chapter" data-level="24.1.2" data-path="chi-i-anden-tests.html"><a href="chi-i-anden-tests.html#chi-i-anden-test-2"><i class="fa fa-check"></i><b>24.1.2</b> Chi i anden test 2</a></li>
 <li class="chapter" data-level="24.1.3" data-path="materialer.html"><a href="materialer.html#anova"><i class="fa fa-check"></i><b>24.1.3</b> Anova</a></li>
 </ul></li>
 <li class="chapter" data-level="24.2" data-path="materialer.html"><a href="materialer.html#freestat-fin"><i class="fa fa-check"></i><b>24.2</b> Freestat FIN</a></li>
@@ -499,7 +446,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="materialer" class="section level1" number="24">
+<div id="materialer" class="section level1">
 <h1><span class="header-section-number">Kapitel 24</span> Materialer</h1>
 <table>
 <thead>
@@ -727,9 +674,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tbody>
 </table>
 
-<div id="videoer-teori" class="section level2" number="24.1">
+<div id="videoer-teori" class="section level2">
 <h2><span class="header-section-number">24.1</span> Videoer teori</h2>
-<div id="introduktion" class="section level4" number="24.1.0.1">
+<div id="introduktion" class="section level4">
 <h4><span class="header-section-number">24.1.0.1</span> Introduktion</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -737,7 +684,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="data" class="section level4" number="24.1.0.2">
+<div id="data" class="section level4">
 <h4><span class="header-section-number">24.1.0.2</span> Data</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -745,7 +692,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="deskriptiv-statistik-1" class="section level4" number="24.1.0.3">
+<div id="deskriptiv-statistik" class="section level4">
 <h4><span class="header-section-number">24.1.0.3</span> Deskriptiv statistik</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -753,7 +700,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="fraktiler-1" class="section level4" number="24.1.0.4">
+<div id="fraktiler" class="section level4">
 <h4><span class="header-section-number">24.1.0.4</span> Fraktiler</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -761,7 +708,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="skævhed-1" class="section level4" number="24.1.0.5">
+<div id="skævhed" class="section level4">
 <h4><span class="header-section-number">24.1.0.5</span> Skævhed</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -769,7 +716,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="kurtosis-1" class="section level4" number="24.1.0.6">
+<div id="kurtosis" class="section level4">
 <h4><span class="header-section-number">24.1.0.6</span> Kurtosis</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -777,7 +724,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="sandsynligheder-1" class="section level4" number="24.1.0.7">
+<div id="sandsynligheder" class="section level4">
 <h4><span class="header-section-number">24.1.0.7</span> Sandsynligheder</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -785,7 +732,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="normalfordelingen-5" class="section level4" number="24.1.0.8">
+<div id="normalfordelingen" class="section level4">
 <h4><span class="header-section-number">24.1.0.8</span> Normalfordelingen</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -793,7 +740,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="konfidensintervaller-normalfordelingen" class="section level4" number="24.1.0.9">
+<div id="konfidensintervaller-normalfordelingen" class="section level4">
 <h4><span class="header-section-number">24.1.0.9</span> Konfidensintervaller normalfordelingen</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -801,7 +748,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="normalfraktildiagram-1" class="section level4" number="24.1.0.10">
+<div id="normalfraktildiagram" class="section level4">
 <h4><span class="header-section-number">24.1.0.10</span> Normalfraktildiagram</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -809,7 +756,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="stikprøvefordelingen-1" class="section level4" number="24.1.0.11">
+<div id="stikprøvefordelingen" class="section level4">
 <h4><span class="header-section-number">24.1.0.11</span> Stikprøvefordelingen</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -817,7 +764,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="stikprøvefordelingen-2-1" class="section level4" number="24.1.0.12">
+<div id="stikprøvefordelingen-2" class="section level4">
 <h4><span class="header-section-number">24.1.0.12</span> Stikprøvefordelingen 2</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -825,7 +772,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="parameter-estimat-1" class="section level4" number="24.1.0.13">
+<div id="parameter-estimat" class="section level4">
 <h4><span class="header-section-number">24.1.0.13</span> Parameter-estimat</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -833,7 +780,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="t-fordelingen-1" class="section level4" number="24.1.0.14">
+<div id="t-fordelingen" class="section level4">
 <h4><span class="header-section-number">24.1.0.14</span> t-fordelingen</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -841,7 +788,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="konfidensinterval-middelværdien" class="section level4" number="24.1.0.15">
+<div id="konfidensinterval-middelværdien" class="section level4">
 <h4><span class="header-section-number">24.1.0.15</span> Konfidensinterval middelværdien</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -849,7 +796,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="fejlmargin" class="section level4" number="24.1.0.16">
+<div id="fejlmargin" class="section level4">
 <h4><span class="header-section-number">24.1.0.16</span> Fejlmargin</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -857,7 +804,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="hypotesetest-middelværdi" class="section level4" number="24.1.0.17">
+<div id="hypotesetest-middelværdi" class="section level4">
 <h4><span class="header-section-number">24.1.0.17</span> Hypotesetest middelværdi</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -865,7 +812,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="lineær-regression" class="section level4" number="24.1.0.18">
+<div id="lineær-regression" class="section level4">
 <h4><span class="header-section-number">24.1.0.18</span> Lineær regression</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -873,7 +820,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="lineær-regression-forudsætninger" class="section level4" number="24.1.0.19">
+<div id="lineær-regression-forudsætninger" class="section level4">
 <h4><span class="header-section-number">24.1.0.19</span> Lineær regression forudsætninger</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -881,7 +828,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="goodness-of-fit-test-1" class="section level4" number="24.1.0.20">
+<div id="goodness-of-fit-test" class="section level4">
 <h4><span class="header-section-number">24.1.0.20</span> Goodness of fit test</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -889,7 +836,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="chi-i-anden-test-1" class="section level3" number="24.1.1">
+<div id="chi-i-anden-test" class="section level3">
 <h3><span class="header-section-number">24.1.1</span> Chi i anden test</h3>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -897,7 +844,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="chi-i-anden-test-2-1" class="section level3" number="24.1.2">
+<div id="chi-i-anden-test-2" class="section level3">
 <h3><span class="header-section-number">24.1.2</span> Chi i anden test 2</h3>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -905,7 +852,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="anova" class="section level3" number="24.1.3">
+<div id="anova" class="section level3">
 <h3><span class="header-section-number">24.1.3</span> Anova</h3>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -915,9 +862,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </div>
 </div>
-<div id="freestat-fin" class="section level2" number="24.2">
+<div id="freestat-fin" class="section level2">
 <h2><span class="header-section-number">24.2</span> Freestat FIN</h2>
-<div id="mindmap-hypoteser" class="section level4" number="24.2.0.1">
+<div id="mindmap-hypoteser" class="section level4">
 <h4><span class="header-section-number">24.2.0.1</span> Mindmap hypoteser</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -925,7 +872,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="beskrivende-statistik-freestat" class="section level4" number="24.2.0.2">
+<div id="beskrivende-statistik-freestat" class="section level4">
 <h4><span class="header-section-number">24.2.0.2</span> Beskrivende statistik Freestat</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -933,7 +880,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="middelværdi-standardafvigelse-ki" class="section level4" number="24.2.0.3">
+<div id="middelværdi-standardafvigelse-ki" class="section level4">
 <h4><span class="header-section-number">24.2.0.3</span> Middelværdi standardafvigelse KI</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -941,7 +888,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="middelværdi-test" class="section level4" number="24.2.0.4">
+<div id="middelværdi-test" class="section level4">
 <h4><span class="header-section-number">24.2.0.4</span> Middelværdi test</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -949,7 +896,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="middelværdi-fejlmargin" class="section level4" number="24.2.0.5">
+<div id="middelværdi-fejlmargin" class="section level4">
 <h4><span class="header-section-number">24.2.0.5</span> Middelværdi fejlmargin</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -957,7 +904,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="standardafvigelse-test-1" class="section level4" number="24.2.0.6">
+<div id="standardafvigelse-test" class="section level4">
 <h4><span class="header-section-number">24.2.0.6</span> Standardafvigelse test</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -965,7 +912,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="andel-test-og-ki" class="section level4" number="24.2.0.7">
+<div id="andel-test-og-ki" class="section level4">
 <h4><span class="header-section-number">24.2.0.7</span> 1 Andel test og KI</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -973,7 +920,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="andel-fejlmargin-og-fpc-1" class="section level4" number="24.2.0.8">
+<div id="andel-fejlmargin-og-fpc" class="section level4">
 <h4><span class="header-section-number">24.2.0.8</span> 1 Andel fejlmargin og FPC</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -981,7 +928,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="fpc-endelig-populations-korrektion-og-z-test-1" class="section level4" number="24.2.0.9">
+<div id="fpc-endelig-populations-korrektion-og-z-test" class="section level4">
 <h4><span class="header-section-number">24.2.0.9</span> FPC endelig populations korrektion og z-test</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -989,7 +936,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="andel-test-og-ki-1" class="section level4" number="24.2.0.10">
+<div id="andel-test-og-ki-1" class="section level4">
 <h4><span class="header-section-number">24.2.0.10</span> 1 Andel test og KI</h4>
 <style>.embed-container { position: relative; padding-bottom: 75%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -997,7 +944,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="andel-fejlmargin-og-fpc-2" class="section level4" number="24.2.0.11">
+<div id="andel-fejlmargin-og-fpc-1" class="section level4">
 <h4><span class="header-section-number">24.2.0.11</span> 1 Andel fejlmargin og FPC</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1005,7 +952,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="andele-1" class="section level4" number="24.2.0.12">
+<div id="andele" class="section level4">
 <h4><span class="header-section-number">24.2.0.12</span> 2 Andele</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1013,7 +960,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="middelværdier-1" class="section level4" number="24.2.0.13">
+<div id="middelværdier" class="section level4">
 <h4><span class="header-section-number">24.2.0.13</span> 2 Middelværdier</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1021,7 +968,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="parret-t-test-1" class="section level4" number="24.2.0.14">
+<div id="parret-t-test" class="section level4">
 <h4><span class="header-section-number">24.2.0.14</span> Parret t-test</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1029,7 +976,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="korrelation-1" class="section level4" number="24.2.0.15">
+<div id="korrelation" class="section level4">
 <h4><span class="header-section-number">24.2.0.15</span> Korrelation</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1037,7 +984,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="simpel-lineær-regression" class="section level4" number="24.2.0.16">
+<div id="simpel-lineær-regression" class="section level4">
 <h4><span class="header-section-number">24.2.0.16</span> Simpel lineær regression</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1045,7 +992,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="simpel-lineær-regression-pi-og-ki" class="section level4" number="24.2.0.17">
+<div id="simpel-lineær-regression-pi-og-ki" class="section level4">
 <h4><span class="header-section-number">24.2.0.17</span> Simpel lineær regression PI og KI</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1053,7 +1000,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="multipel-lineær-regression-1" class="section level4" number="24.2.0.18">
+<div id="multipel-lineær-regression" class="section level4">
 <h4><span class="header-section-number">24.2.0.18</span> Multipel lineær regression</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1061,7 +1008,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="dummy-variable-1" class="section level4" number="24.2.0.19">
+<div id="dummy-variable" class="section level4">
 <h4><span class="header-section-number">24.2.0.19</span> Dummy variable</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1069,7 +1016,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="multipel-lineær-regression-forudsagt-værdi-1" class="section level4" number="24.2.0.20">
+<div id="multipel-lineær-regression-forudsagt-værdi" class="section level4">
 <h4><span class="header-section-number">24.2.0.20</span> Multipel lineær regression forudsagt værdi</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1077,7 +1024,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="anova-variansanalyse" class="section level4" number="24.2.0.21">
+<div id="anova-variansanalyse" class="section level4">
 <h4><span class="header-section-number">24.2.0.21</span> ANOVA variansanalyse</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1087,18 +1034,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </div>
 </div>
-<div id="eksamensvideoer" class="section level2" number="24.3">
+<div id="eksamensvideoer" class="section level2">
 <h2><span class="header-section-number">24.3</span> Eksamensvideoer</h2>
 <p><a name="2017_9_5"></a></p>
 <hr />
 <hr />
 <hr />
-<div id="eksamen-statistik-2-timer-2017-9-5" class="section level4" number="24.3.0.1">
+<div id="eksamen-statistik-2-timer-2017-9-5" class="section level4">
 <h4><span class="header-section-number">24.3.0.1</span> Eksamen statistik 2 timer 2017 9 5</h4>
 <p><a href="https://www.dropbox.com/s/3gd6mcocowe8glq/2017%209%20Statistik%20Fin.pdf?dl=1">2017 9 5 Opgave</a>
 <a href="https://www.dropbox.com/s/y4p8j90wjbzhtb3/2017%209%20statistik%20Data%202.RE.xlsx?dl=1">2017 9 5 Data</a>
 <a href="https://www.dropbox.com/s/wruqocv7g0fvkob/2017%209%20Statistik%20Fin%20opg%201%20og%203%20l%C3%B8sning%20skabelon%20Freestat%20.docx?dl=1">2017 9 5 Løsningsforslag</a></p>
-<div id="opgave-1-1-normalfraktildiagram" class="section level5" number="24.3.0.1.1">
+<div id="opgave-1-1-normalfraktildiagram" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.1</span> Opgave 1 1 Normalfraktildiagram</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1106,7 +1053,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1-2-test-middel" class="section level5" number="24.3.0.1.2">
+<div id="opgave-1-2-test-middel" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.2</span> Opgave 1 2 Test middel</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1114,7 +1061,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1-3-varianshomogenitet" class="section level5" number="24.3.0.1.3">
+<div id="opgave-1-3-varianshomogenitet" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.3</span> Opgave 1 3 Varianshomogenitet</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1122,7 +1069,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1-4-test-af-2-middelværdier" class="section level5" number="24.3.0.1.4">
+<div id="opgave-1-4-test-af-2-middelværdier" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.4</span> Opgave 1 4 Test af 2 middelværdier</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1130,7 +1077,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1-5-konfidensinterval-for-forskellen-af-middelværdier" class="section level5" number="24.3.0.1.5">
+<div id="opgave-1-5-konfidensinterval-for-forskellen-af-middelværdier" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.5</span> Opgave 1 5 Konfidensinterval for forskellen af middelværdier</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1138,7 +1085,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3-1-test-af-andel" class="section level5" number="24.3.0.1.6">
+<div id="opgave-3-1-test-af-andel" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.6</span> Opgave 3 1 Test af andel</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1146,7 +1093,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3-2-konfidensinterval-for-middelværdi" class="section level5" number="24.3.0.1.7">
+<div id="opgave-3-2-konfidensinterval-for-middelværdi" class="section level5">
 <h5><span class="header-section-number">24.3.0.1.7</span> Opgave 3 2 Konfidensinterval for middelværdi</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1162,12 +1109,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 </div>
-<div id="eksamen-statistik-2-timer-2016-8-10" class="section level4" number="24.3.0.2">
+<div id="eksamen-statistik-2-timer-2016-8-10" class="section level4">
 <h4><span class="header-section-number">24.3.0.2</span> Eksamen statistik 2 timer 2016 8 10</h4>
 <p><a href="https://drive.google.com/uc?export=download&amp;id=0B1E7VnhxsDMlTy1NVjFBMDRLZFk">2016 8 10 Opgave</a>
 <a href="https://drive.google.com/uc?export=download&amp;id=0B1E7VnhxsDMlcVdQUVFjUEp2SUE">2016 8 10 Data</a>
 <a href="https://drive.google.com/uc?export=download&amp;id=0B1E7VnhxsDMlQnNjMk9XZDZKWUU">2016 8 10 Løsningsforslag</a></p>
-<div id="opgave-1-lineær-regression" class="section level5" number="24.3.0.2.1">
+<div id="opgave-1-lineær-regression" class="section level5">
 <h5><span class="header-section-number">24.3.0.2.1</span> Opgave 1 Lineær regression</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1175,7 +1122,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2-andele" class="section level5" number="24.3.0.2.2">
+<div id="opgave-2-andele" class="section level5">
 <h5><span class="header-section-number">24.3.0.2.2</span> Opgave 2 Andele</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1183,7 +1130,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3-middelværdier" class="section level5" number="24.3.0.2.3">
+<div id="opgave-3-middelværdier" class="section level5">
 <h5><span class="header-section-number">24.3.0.2.3</span> Opgave 3 Middelværdier</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1191,7 +1138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-4-teori-ki-punktestimat-testniveau" class="section level5" number="24.3.0.2.4">
+<div id="opgave-4-teori-ki-punktestimat-testniveau" class="section level5">
 <h5><span class="header-section-number">24.3.0.2.4</span> Opgave 4 Teori KI, punktestimat, testniveau</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1208,12 +1155,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 </div>
-<div id="eksamen-statistik-2-timer-2015-8-7" class="section level4" number="24.3.0.3">
+<div id="eksamen-statistik-2-timer-2015-8-7" class="section level4">
 <h4><span class="header-section-number">24.3.0.3</span> Eksamen statistik 2 timer 2015 8 7</h4>
 <p><a href="https://www.dropbox.com/s/dwbpp3ykq17tbvb/2015%208%207%201.reeksamen.pdf?dl=1">2015 8 7 Opgave</a>
 <a href="https://www.dropbox.com/s/45d1xkhjp3c0owh/2015%208%207%20Data.xlsx?dl=1">2015 8 7 Data</a>
 <a href="https://www.dropbox.com/s/9nhbc21yth3si6o/2015%208%207%20Freestat%20skabelon%20l%C3%B8sning.docx?dl=1">2015 8 7 Løsningsforslag</a></p>
-<div id="opgave-1.1" class="section level5" number="24.3.0.3.1">
+<div id="opgave-1.1" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.1</span> Opgave 1.1</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1221,7 +1168,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.2" class="section level5" number="24.3.0.3.2">
+<div id="opgave-1.2" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.2</span> Opgave 1.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1229,7 +1176,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.3" class="section level5" number="24.3.0.3.3">
+<div id="opgave-1.3" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.3</span> Opgave 1.3</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1237,7 +1184,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.4" class="section level5" number="24.3.0.3.4">
+<div id="opgave-1.4" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.4</span> Opgave 1.4</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1245,7 +1192,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.5" class="section level5" number="24.3.0.3.5">
+<div id="opgave-1.5" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.5</span> Opgave 1.5</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1253,7 +1200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.1-og-2.2" class="section level5" number="24.3.0.3.6">
+<div id="opgave-2.1-og-2.2" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.6</span> Opgave 2.1 og 2.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1261,7 +1208,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.3" class="section level5" number="24.3.0.3.7">
+<div id="opgave-2.3" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.7</span> Opgave 2.3</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1269,7 +1216,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.1" class="section level5" number="24.3.0.3.8">
+<div id="opgave-3.1" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.8</span> Opgave 3.1</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1277,7 +1224,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.2" class="section level5" number="24.3.0.3.9">
+<div id="opgave-3.2" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.9</span> Opgave 3.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1285,7 +1232,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.3" class="section level5" number="24.3.0.3.10">
+<div id="opgave-3.3" class="section level5">
 <h5><span class="header-section-number">24.3.0.3.10</span> Opgave 3.3</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1301,12 +1248,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 </div>
-<div id="eksamen-statistik-2-timer-2015-3-4" class="section level4" number="24.3.0.4">
+<div id="eksamen-statistik-2-timer-2015-3-4" class="section level4">
 <h4><span class="header-section-number">24.3.0.4</span> Eksamen statistik 2 timer 2015 3 4</h4>
 <p><a href="https://drive.google.com/file/d/0B1E7VnhxsDMlLVBMek5kWEhRZlU/view?usp=sharing">2015 3 4 Opgave</a>
 <a href="https://drive.google.com/file/d/0B1E7VnhxsDMlX0p3Qk8wWlNxM28/view?usp=sharing">2015 3 4 Data</a>
 <a href="https://drive.google.com/file/d/0B1E7VnhxsDMlWXNWTW55Sk94RDA/view?usp=sharing">2015 3 4 Løsningsforslag</a></p>
-<div id="opgave-1-lineær-regression-1" class="section level5" number="24.3.0.4.1">
+<div id="opgave-1-lineær-regression-1" class="section level5">
 <h5><span class="header-section-number">24.3.0.4.1</span> Opgave 1 lineær regression</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1314,7 +1261,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2-test-af-2-middelværdier" class="section level5" number="24.3.0.4.2">
+<div id="opgave-2-test-af-2-middelværdier" class="section level5">
 <h5><span class="header-section-number">24.3.0.4.2</span> Opgave 2 Test af 2 middelværdier</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1322,7 +1269,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3-ki-andel-og-middel-test-af-middel" class="section level5" number="24.3.0.4.3">
+<div id="opgave-3-ki-andel-og-middel-test-af-middel" class="section level5">
 <h5><span class="header-section-number">24.3.0.4.3</span> Opgave 3 KI andel og middel, test af middel</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1330,7 +1277,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-4-2-andele" class="section level5" number="24.3.0.4.4">
+<div id="opgave-4-2-andele" class="section level5">
 <h5><span class="header-section-number">24.3.0.4.4</span> Opgave 4 2 Andele</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1341,12 +1288,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
-<div id="eksamensvideoer-au-smartlearning" class="section level2" number="24.4">
+<div id="eksamensvideoer-au-smartlearning" class="section level2">
 <h2><span class="header-section-number">24.4</span> Eksamensvideoer AU Smartlearning</h2>
 <hr />
 <hr />
 <hr />
-<div id="konverter-eksamensopgaven-til-word" class="section level4" number="24.4.0.1">
+<div id="konverter-eksamensopgaven-til-word" class="section level4">
 <h4><span class="header-section-number">24.4.0.1</span> Konverter eksamensopgaven til Word</h4>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1358,11 +1305,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 <hr />
 </div>
-<div id="eksamen-statistik-au-smartlearning-4-timer-2017-6" class="section level4" number="24.4.0.2">
+<div id="eksamen-statistik-au-smartlearning-4-timer-2017-6" class="section level4">
 <h4><span class="header-section-number">24.4.0.2</span> Eksamen statistik AU Smartlearning 4 timer 2017 6</h4>
 <p><a href="https://www.dropbox.com/s/dlgt1hnh6wu4aja/Statistik%20eksamensopgave%20juni%202017%20opgave%202.pdf?dl=1">2017 6 Eksamensopgave</a>
 <a href="https://www.dropbox.com/s/s0fl0lg2i2zk2hh/Eksamen%202017%20juni%20opgave%202%20L%C3%98SNING.docx?dl=1">2017 6 Løsningsforslag</a></p>
-<div id="opgave-2.1-normalfraktildiagram" class="section level5" number="24.4.0.2.1">
+<div id="opgave-2.1-normalfraktildiagram" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.1</span> Opgave 2.1 Normalfraktildiagram</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1370,7 +1317,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.2-test-varians" class="section level5" number="24.4.0.2.2">
+<div id="opgave-2.2-test-varians" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.2</span> Opgave 2.2 Test varians</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1378,7 +1325,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.3-test-middel" class="section level5" number="24.4.0.2.3">
+<div id="opgave-2.3-test-middel" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.3</span> Opgave 2.3 Test Middel</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1386,7 +1333,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.4-test-ens-varianser" class="section level5" number="24.4.0.2.4">
+<div id="opgave-2.4-test-ens-varianser" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.4</span> Opgave 2.4 Test ens varianser</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1394,7 +1341,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.5-test-to-middelværdier" class="section level5" number="24.4.0.2.5">
+<div id="opgave-2.5-test-to-middelværdier" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.5</span> Opgave 2.5 Test to middelværdier</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1402,7 +1349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.6-sandsynlighed-normalfordelingen" class="section level5" number="24.4.0.2.6">
+<div id="opgave-2.6-sandsynlighed-normalfordelingen" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.6</span> Opgave 2.6 Sandsynlighed normalfordelingen</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1410,7 +1357,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.7-sandsynlighed-normalfordelingen" class="section level5" number="24.4.0.2.7">
+<div id="opgave-2.7-sandsynlighed-normalfordelingen" class="section level5">
 <h5><span class="header-section-number">24.4.0.2.7</span> Opgave 2.7 Sandsynlighed normalfordelingen</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1423,11 +1370,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 </div>
-<div id="eksamen-statistik-4-timer-2016-1" class="section level4" number="24.4.0.3">
+<div id="eksamen-statistik-4-timer-2016-1" class="section level4">
 <h4><span class="header-section-number">24.4.0.3</span> Eksamen statistik 4 timer 2016 1</h4>
 <p><a href="https://www.dropbox.com/s/t1h9o0xnutneavu/AU%20Statistik%20eksamensopgave%20-%20januar%202016.pdf?dl=1">2016 1 Opgave</a></p>
 <p><a href="https://www.dropbox.com/s/vk2igqyofts6fes/AU%20Statistik%20eksamensopgave%20-%20januar%202016%20l%C3%B8sningsforslag.docx?dl=1">2016 1 Løsningsforslag</a></p>
-<div id="au-januar-2016-opgave-1.1" class="section level5" number="24.4.0.3.1">
+<div id="au-januar-2016-opgave-1.1" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.1</span> AU januar 2016 Opgave 1.1</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1435,7 +1382,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-1.2" class="section level5" number="24.4.0.3.2">
+<div id="au-januar-2016-opgave-1.2" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.2</span> AU januar 2016 Opgave 1.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1443,7 +1390,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-1.3" class="section level5" number="24.4.0.3.3">
+<div id="au-januar-2016-opgave-1.3" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.3</span> AU januar 2016 Opgave 1.3</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1451,7 +1398,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-1.4" class="section level5" number="24.4.0.3.4">
+<div id="au-januar-2016-opgave-1.4" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.4</span> AU januar 2016 Opgave 1.4</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1459,7 +1406,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-1.5" class="section level5" number="24.4.0.3.5">
+<div id="au-januar-2016-opgave-1.5" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.5</span> AU januar 2016 Opgave 1.5</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1467,7 +1414,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-2.1-og-2.2" class="section level5" number="24.4.0.3.6">
+<div id="au-januar-2016-opgave-2.1-og-2.2" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.6</span> AU januar 2016 Opgave 2.1 og 2.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1475,7 +1422,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-3.1" class="section level5" number="24.4.0.3.7">
+<div id="au-januar-2016-opgave-3.1" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.7</span> AU januar 2016 Opgave 3.1</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1483,7 +1430,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-3.2" class="section level5" number="24.4.0.3.8">
+<div id="au-januar-2016-opgave-3.2" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.8</span> AU januar 2016 Opgave 3.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1491,7 +1438,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-3.3" class="section level5" number="24.4.0.3.9">
+<div id="au-januar-2016-opgave-3.3" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.9</span> AU januar 2016 Opgave 3.3</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1499,7 +1446,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-3.4" class="section level5" number="24.4.0.3.10">
+<div id="au-januar-2016-opgave-3.4" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.10</span> AU januar 2016 Opgave 3.4</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1507,7 +1454,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="au-januar-2016-opgave-4.1-og-4.2" class="section level5" number="24.4.0.3.11">
+<div id="au-januar-2016-opgave-4.1-og-4.2" class="section level5">
 <h5><span class="header-section-number">24.4.0.3.11</span> AU januar 2016 Opgave 4.1 og 4.2</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1520,11 +1467,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <hr />
 </div>
 </div>
-<div id="eksamen-statistik-4-timer-2015-6" class="section level4" number="24.4.0.4">
+<div id="eksamen-statistik-4-timer-2015-6" class="section level4">
 <h4><span class="header-section-number">24.4.0.4</span> Eksamen statistik 4 timer 2015 6</h4>
 <p><a href="https://www.dropbox.com/s/lpyp894as98ho11/Smartlearning%20AU%202015%206.pdf?dl=1">2015 6 Opgave</a>
 <a href="https://www.dropbox.com/s/kf4avnc43qpz20d/2015%206%20AU%20SMART%20Vejledende.docx?dl=1">2015 6 Løsningsforslag</a></p>
-<div id="opgave-1.1-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.1">
+<div id="opgave-1.1-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.1</span> Opgave 1.1 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1532,7 +1479,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.2-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.2">
+<div id="opgave-1.2-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.2</span> Opgave 1.2 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1540,7 +1487,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.3-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.3">
+<div id="opgave-1.3-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.3</span> Opgave 1.3 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1548,7 +1495,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.4-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.4">
+<div id="opgave-1.4-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.4</span> Opgave 1.4 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1556,7 +1503,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.5-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.5">
+<div id="opgave-1.5-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.5</span> Opgave 1.5 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1564,7 +1511,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.6-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.6">
+<div id="opgave-1.6-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.6</span> Opgave 1.6 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1572,7 +1519,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-1.7-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.7">
+<div id="opgave-1.7-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.7</span> Opgave 1.7 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1580,7 +1527,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.1-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.8">
+<div id="opgave-2.1-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.8</span> Opgave 2.1 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1588,7 +1535,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-2.2-og-2.3-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.9">
+<div id="opgave-2.2-og-2.3-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.9</span> Opgave 2.2 og 2.3 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1596,7 +1543,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.1-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.10">
+<div id="opgave-3.1-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.10</span> Opgave 3.1 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1604,7 +1551,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.2-og-3.3-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.11">
+<div id="opgave-3.2-og-3.3-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.11</span> Opgave 3.2 og 3.3 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1612,7 +1559,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-3.4-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.12">
+<div id="opgave-3.4-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.12</span> Opgave 3.4 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1620,7 +1567,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-4.1-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.13">
+<div id="opgave-4.1-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.13</span> Opgave 4.1 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1628,7 +1575,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-4.2-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.14">
+<div id="opgave-4.2-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.14</span> Opgave 4.2 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1636,7 +1583,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </iframe>
 </div>
 </div>
-<div id="opgave-4.3-eksamen-au-statistik-4-timer-2015-6" class="section level5" number="24.4.0.4.15">
+<div id="opgave-4.3-eksamen-au-statistik-4-timer-2015-6" class="section level5">
 <h5><span class="header-section-number">24.4.0.4.15</span> Opgave 4.3 Eksamen AU statistik 4 timer 2015 6</h5>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
 <div class="embed-container">
@@ -1677,7 +1624,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": false,
 "google": false,
 "instapper": false

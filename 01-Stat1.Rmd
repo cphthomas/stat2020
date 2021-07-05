@@ -15,11 +15,14 @@ pacman::p_load(Cairo,timeDate, DT,plotly,rio,exams,e1071,WriteXLS,readxl,maps,kn
 
 # Indledning 
 
-<!-- ```{r, echo=FALSE, results='asis',warning=FALSE,include=FALSE} -->
-<!-- cat(readLines('np.html')) -->
-<!-- source("indeks.R") -->
-<!-- ``` -->
+```{r, echo=FALSE, results='asis',warning=FALSE,include=FALSE}
+# cat(readLines('np.html'))
+```
 
+```{r, echo=FALSE,warning=FALSE,include=FALSE}
+
+source("indeks.R")
+```
 
 <!-- ```{r} -->
 <!-- boble <- function(navn,nr){ -->
@@ -249,7 +252,7 @@ DKdf <- round(100*((DKkurs[2:nrow(DKkurs),]-DKkurs[1:nrow(DKkurs)-1,])/DKkurs[1:
 names(DKdf) <- c("TRYG","DDB","FLS","GENMAB","TDC","ISS")
 DKdf[is.na(DKdf)] <- 0 #Replace NA with 0
 # DKdf <- as.matrix(DKdf)
-write.xlsx(DKdf, file = "FILER/DK aktiekurser.xlsx", sheetName = "Kurser",colNames = TRUE,rowNames = TRUE,firstActiveRow = 2,  firstActiveCol = 2)
+write.xlsx(DKdf, file = "FILER/DK aktiekurser.xlsx",overwrite=TRUE, sheetName = "Kurser",colNames = TRUE,rowNames = TRUE,firstActiveRow = 2,  firstActiveCol = 2)
 
 
 barx <- round(mean(DKdf[,1]),4)
@@ -8808,11 +8811,12 @@ Man kan eksportere data til fx Excel med pakken rio, herunder dannes en Excel fi
 ```{r, warning=FALSE}
 #Hent rio med install.packages("rio")
 #Load rio med library("rio") eller benyt pacman
-pacman::p_load(quantmod, forecast, rio)
-# getSymbols("GOOG",from = "2017-01-01", to = Sys.Date(),getSymbols.warning4.0=FALSE)
-agoog <- auto.arima(GOOG[,6])
-fagoog <- forecast(agoog)
-export(list(GOOG,fagoog),"google.xlsx") #Skriver filen google.xlsx til arbejdsbiblioteket.
+# pacman::p_load(quantmod, forecast, rio)
+# # getSymbols("GOOG",from = "2017-01-01", to = Sys.Date(),getSymbols.warning4.0=FALSE)
+# agoog <- auto.arima(GOOG[,6])
+# fagoog <- forecast(agoog)
+# export(list(GOOG,fagoog),overwrite=TRUE,"google.xlsx") #Skriver filen google.xlsx til arbejdsbiblioteket.
+
 ```
 
 

@@ -18,15 +18,15 @@ favicon: "favicon.ico"
 					
 					
 ```{r, echo=FALSE, results='asis'}
-cat(readLines('fp.html'))
+# cat(readLines('fp.html'))
 ```
 
+<h2>Klik på kapitlerne i venstre side, for at gå til indholdet.</h2>
+  
+  
+  
+  <!-- <h3>***Hvis der er problemer med at afmelde abonnementet i Paypal eller Stripe, så skriv endelig til info@tepedu.com, så hjælper vi med at afmelde abonnementet :O)***</h3> -->
 
-  
-  
-  
-  <h3>***Hvis der er problemer med at afmelde abonnementet i Paypal eller Stripe, så skriv endelig til info@tepedu.com, så hjælper vi med at afmelde abonnementet :O)***</h3>
-  
   
   
   

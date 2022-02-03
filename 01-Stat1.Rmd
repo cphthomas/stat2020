@@ -842,9 +842,9 @@ Hvorfor kan en portefølje, der ikke er volatil (dvs. porteføljen har en lille 
 ## Selvtest
 
 
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=57" target="_blank">Selvtest Realkredit Deskriptiv statistik</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=28" target="_blank">Selvtest Realkredit Deskriptiv statistik</a></h2>
 <br>
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=50" target="_blank">Selvtest Diamanter Deskriptiv statistik</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=21" target="_blank">Selvtest Diamanter Deskriptiv statistik</a></h2>
 
 
 

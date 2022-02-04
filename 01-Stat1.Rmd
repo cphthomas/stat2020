@@ -2618,13 +2618,13 @@ Du kan hente løsningen til opgaven <a href="https://drive.google.com/uc?export=
 <h2><a href="https://quiz.tepedu.dk/mu2" target="_blank">Quiz hypotesetests</a></h2> 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=56" target="_blank">Selvtest konfidensinterval og middelværdi med videoløsning.</a></h2> 
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=27" target="_blank">Selvtest konfidensinterval og middelværdi med videoløsning.</a></h2> 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=51" target="_blank">Selvtest middel Dow Jones med videoløsning.</a></h2> 
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=22" target="_blank">Selvtest middel Dow Jones med videoløsning.</a></h2> 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=67" target="_blank">Selvtest normalfordelingen med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=38" target="_blank">Selvtest normalfordelingen med videoløsning</a></h2>
 
 
 
@@ -3334,10 +3334,10 @@ Vi konkluderer at 50% af bankens sikkerhedspersonale er minoriteter.
 </details> 
 
 ## Selvtest 
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=58" target="_blank">Selvtest 1 andel med videoløsning.</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=29" target="_blank">Selvtest 1 andel med videoløsning.</a></h2>
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=52" target="_blank">Selvtest 1 andel OMX  med videoløsning.</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=23" target="_blank">Selvtest 1 andel OMX  med videoløsning.</a></h2>
 
 
 
@@ -3853,7 +3853,7 @@ frameborder="0">
 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=59" target="_blank">Selvtest 2 andele med videoløsning.</a></h2>  
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=30" target="_blank">Selvtest 2 andele med videoløsning.</a></h2>  
 
 
 
@@ -4242,7 +4242,7 @@ frameborder="0">
 </details> 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=60" target="_blank">Selvtest Realkredit 2 middelværdier med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=31" target="_blank">Selvtest Realkredit 2 middelværdier med videoløsning</a></h2>
 
 
 
@@ -5594,13 +5594,13 @@ Vi kan altså afvise at hældningen $\beta$ er nul, hvilket betyder DAX afkastet
 </details>  
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=65" target="_blank">Selvtest korrelation med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=36" target="_blank">Selvtest korrelation med videoløsning</a></h2>
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=66" target="_blank">Selvtest simpel lineær regression med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=37" target="_blank">Selvtest simpel lineær regression med videoløsning</a></h2>
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=54" target="_blank">Selvtest bank lineær regression med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=25" target="_blank">Selvtest bank lineær regression med videoløsning</a></h2>
 ## Quiz
 <h2><a href="https://quiz.tepedu.dk/reg1" target="_blank">Quiz Multipel lineær regression</a></h2>
 
@@ -5798,7 +5798,7 @@ $$SD(X)=\sqrt[]{n\cdot p \cdot (1-p)}$$
 
 
 ## <font color="red">Selvtest<sup> Premium </font></sup>
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=61" target="_blank">Selvtest binomialfordelingen med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=32" target="_blank">Selvtest binomialfordelingen med videoløsning</a></h2>
 
 # <font color="red">Den hypergeometriske fordeling<sup> Premium </font></sup>
 
@@ -5950,7 +5950,7 @@ Output fra Freestat bliver:
 
 
 ## <font color="red">Selvtest<sup> Premium </font></sup>
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=63" target="_blank">Selvtest den hypergeometriske fordeling med videoløsninger</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=34" target="_blank">Selvtest den hypergeometriske fordeling med videoløsninger</a></h2>
 
 # <font color="red">Poisson fordelingen<sup> Premium </font></sup>
 
@@ -6050,7 +6050,7 @@ $$P(X\geq 1)=1-P(X=0)=1-0.1353=0.8647$$
 
 ## <font color="red">Selvtest<sup> Premium </font></sup>
 
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=62" target="_blank">Selvtest poissonfordelingen med videoløsning</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=33" target="_blank">Selvtest poissonfordelingen med videoløsning</a></h2>
 
 
 
@@ -7200,9 +7200,9 @@ Udfra tabellerne ses at minoriteter er overrepræsenteret blandt administration 
 
 
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=95" target="_blank">Selvtest Chi i anden investeringsfonde med videoløsninger</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=66" target="_blank">Selvtest Chi i anden investeringsfonde med videoløsninger</a></h2>
 ## Selvtest
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=55" target="_blank">Selvtest Chi i anden realkredit med videoløsninger</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=26" target="_blank">Selvtest Chi i anden realkredit med videoløsninger</a></h2>
 ## Quiz Chi i anden tests
 <h2><a href="https://quiz.tepedu.dk/chi1" target="_blank">Quiz Chi i anden test</a></h2>
 
@@ -7590,9 +7590,9 @@ Vi kan ud fra boxplots se at dokumentarfilm rates højt i modsætning til action
 </details>
 
 ## <font color="red">Selvtest<sup> Premium </font></sup>
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=64" target="_blank">Selvtest Anova analyse Realkredit med videoløsninger</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=35" target="_blank">Selvtest Anova analyse Realkredit med videoløsninger</a></h2>
 ## <font color="red">Selvtest<sup> Premium </font></sup>
-<h2><a href="https://www.edutest.dk/mod/quiz/view.php?id=82" target="_blank">Selvtest Anova analyse Aktier med videoløsninger</a></h2>
+<h2><a href="https://tepedu.eu/moodle/mod/quiz/view.php?id=65" target="_blank">Selvtest Anova analyse Aktier med videoløsninger</a></h2>
 ## <font color="red">Quiz ANOVA<sup> Premium </font></sup>
 <h2><a href="https://quiz.tepedu.dk/anova" target="_blank">Quiz Anova</a></h2>
 
